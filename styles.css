@@ -1,0 +1,116 @@
+/*
+ * Name: Angela Liu
+ * Date: May 6, 2020
+ * Section: CSE 154 AL
+ *
+ * CSS page linked to the index.html of my recipe generator. This page keeps a consistent style
+ * and feel across the page with spacing and colors.
+ */
+
+body {
+  background-color: rgb(255, 247, 236);
+  font-family: 'Karla', sans-serif;
+}
+
+section, body, button {
+  text-align: center;
+}
+
+h2, body {
+  font-size: 20px;
+}
+
+body, button {
+  color: rgb(119, 51, 5);
+}
+
+button {
+  display: inline-block;
+  padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+  background-color: rgb(255, 240, 211);
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px rgb(177, 155, 146);
+}
+
+button:hover {
+  background-color: rgb(223, 202, 164);
+}
+
+button:active {
+  background-color: rgb(223, 202, 164);
+  box-shadow: 0 5px rgb(141, 123, 116);
+  transform: translateY(4px);
+}
+
+h2, form {
+  letter-spacing: 2px;
+}
+
+h2 {
+  color: rgb(153, 97, 60);
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+  border-bottom: 6px double rgb(153, 97, 60);
+  line-height: 20px;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-size: 100px;
+  color: rgb(156, 84, 35);
+  text-shadow:
+    35px 0px rgb(255, 204, 196),
+    70px 0px rgb(255, 212, 188),
+    105px 0px rgb(255, 237, 177);
+  -webkit-text-stroke: 1px rgb(252, 241, 207);
+  margin: 30px;
+}
+
+form {
+  margin-top: 40px;
+  font-size: 25px;
+  font-style: italic;
+  text-transform: lowercase;
+  text-shadow: -1px 1px rgb(255, 237, 177);
+}
+
+img, section {
+  width: 500px;
+  height: 333.33px;
+}
+
+img, section p {
+  position: absolute;
+}
+
+img {
+  object-fit: cover;
+  left: 0;
+  top: 0;
+}
+
+section {
+  position: relative;
+  margin: 42px;
+}
+
+section p {
+  z-index: 100;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: wheat;
+  padding: 20px;
+  opacity: 90%;
+}
+
+#recipes-and-imgs {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
